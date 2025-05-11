@@ -4,4 +4,4 @@
 [MITM]
 hostname = %APPEND% ap*.intsig.net
 [Script]
-Camscanner = requires-body=1,script-path=https://raw.githubusercontent.com/nhaanpate/module/nhaanpate/camscanner.js,type=http-response,pattern= https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_property\?
+Camscanner = requires-body=1,script-path=https://raw.githubusercontent.com/nhaanpate/javascript/nhaanpate/camscanner.js,type=http-response,pattern= https:\/\/(api|api-cs.*)\.intsig\.net\/purchase\/cs\/query_property\?
