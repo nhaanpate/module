@@ -1,0 +1,7 @@
+#! name= 𝗧𝗿𝘂𝗲𝗖𝗮𝗹𝗹𝗲𝗿      
+#! desc= 𝗯𝘆 𝗡𝗵𝗮 𝗔𝗻 𝗣𝗮 𝗧𝗲
+
+[MITM]
+hostname = %APPEND% premium*.truecaller.com
+[Script]
+Truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products\/apple),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nhaanpate/module/nhaanpate/truecaller.js
